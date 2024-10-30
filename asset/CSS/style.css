@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(13, 22, 63, 0.356);
+}
+/* Titre avec font spécial */
+h1{
+      font-family: "Honk", system-ui;
+      /* font-optical-sizing: auto (NON VALIDE W3C; */
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+        text-align: center;
+        font-size: 3em
+}
+
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Début responsive */
+.galerie-item img{
+    width: 100%;
+    height: 300px;
+    flex-basis: 100%;
+    border: 2px solid pink;
+    justify-content: space-between;
+    
+}
+@media screen and (min-width:1200px){
+    .galerie-item{
+        flex-basis: 24%;
+}
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .galerie-item{
+        flex-basis: 50%;
+    }
+}
+/* Fin du responsive */
+/* Marge entre mes photos */
+.galerie-item{
+    margin-bottom: 3%;
+    margin-right: 0.5%;
+}
+/* Ombre + hover */
+.galerie-item:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+    box-shadow: 10px 5px 5px rgb(11, 138, 223);
+}
