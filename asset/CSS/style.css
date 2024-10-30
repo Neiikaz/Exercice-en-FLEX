@@ -36,7 +36,7 @@ h1{
 }
 @media screen and (min-width:768px) and (max-width:1199px) {
     .galerie-item{
-        flex-basis: 50%;
+        flex-basis: 49%;
     }
 }
 /* Fin du responsive */
